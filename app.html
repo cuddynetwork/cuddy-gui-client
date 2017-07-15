@@ -1,0 +1,389 @@
+<html class=" js cssanimations" lang=""><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Spacial - Theme docs</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="dist/theme.min.css">
+
+  <!-- javascript -->
+  <script src="resources/jquery.min.js"></script>
+  <script src="resources/highlight.min.js"></script>
+  <script src="resources/tether.min.js"></script>
+  <script src="dist/theme.min.js"></script>
+</head>
+<body>
+<div class="panel-body" style="max-width:850px;max-height:450px;">
+	<div class="row">
+		<div class="col-md-2">
+			<nav class="iconav" style="position: relative;">
+			<a class="iconav-brand" href="#">
+			  <i class="ion-cube"></i>
+			</a>
+			<div class="nav-slider">
+			  <ul class="nav iconav-nav flex-md-column">
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title=""  data-original-title="Dashboard"  data-toggle="collapse" data-target="#dashboardTab">
+					<i class="ion-home"></i>
+					<span class="nav-link-label hidden-md-up">Dashboard</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-original-title="Contracts"  data-toggle="collapse" data-target="#contractsTab">
+					<i class="fa fa-files-o" aria-hidden="true"></i> 
+					<span class="nav-link-label hidden-md-up">Contracts</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Metrics">
+					<i class="fa fa-cubes" aria-hidden="true"></i>
+					<span class="nav-link-label hidden-md-up">Mine</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-original-title="Code"  data-toggle="collapse" data-target="#codeTab">
+					<i class="ion-code"></i>
+					<span class="nav-link-label hidden-md-up">Console</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-original-title="Settings"  data-toggle="collapse" data-target="#settingsTab">
+					<i class="ion-gear-a"></i>
+					<span class="nav-link-label hidden-md-up">Settings</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Sign out">
+					<i class="ion-power"></i>
+					<span class="nav-link-label hidden-md-up">Sign out</span>
+				  </a>
+				</li>
+			  </ul>
+			</div>
+			</nav>
+		</div>
+		<div class="col-md-10">
+			<div class="collapse" id="dashboardTab">
+				<div style="text-align:right;margin-top:2px;">
+					<span class="statcard-desc">Dashboard</span>
+				</div>
+				<div class="row" style="margin-top:15px;">
+					<div class="col-md-4">
+						<h4><i class="fa fa-chain" aria-hidden="true"></i> Account</h4>
+						<div class="statcard p-3">
+						  <h3 class="statcard-number">
+							12,938.00
+						  </h3>
+						  <span class="statcard-desc">Total balance CUD</span>
+						</div>
+						<div class="statcard p-3">
+						  <h3 class="statcard-number">
+							5,230.23
+							<small class="stat-indicator indicator-positive">3%</small>
+						  </h3>
+						  <span class="statcard-desc">Total balance USD</span>
+						</div>
+						<h4><i class="fa fa-files-o" aria-hidden="true"></i> Contracts</h4>
+						<div class="statcard p-3">
+						  <h3 class="statcard-number">
+							0.2342
+							<small class="stat-indicator indicator-positive">3%</small>
+						  </h3>
+						  <span class="statcard-desc">CUD each houre</span>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h4><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</h4>
+						<div class="row" style="margin-bottom:10px;">
+							<div class="col-md-6" style="padding:0px;">
+								<input type="email" class="form-control" id="addressCUD" aria-describedby="Cuddy Address" placeholder="1Lkd2jdje2bk8bjd2kkdk2bks2">
+							</div>
+							<div class="col-md-4" style="padding:0px;">
+								<input type="amount" class="form-control" id="amountCUD" aria-describedby="Cuddy Amount" placeholder="0.01">
+							</div>
+							<div class="col-md-2" style="padding:0px;">
+								<button class="btn btn-secondary">Send</button>
+							</div>
+						</div>
+
+						<h4><i class="fa fa-reorder" aria-hidden="true"></i> Addresses</h4> 
+						<table class="table table-hover">
+						  <thead>
+							<tr>
+							  <th>Address</th>
+							  <th>Confirmed</th>
+							  <th>Unconfirmed</th>
+							  <th></th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row"><span style="font-size:8px;">1Lkd2jdje2bk8bjd2kkdk2bks2</span></th>
+								<td><span style="font-size:12px;">0.00000000</span></td>
+								<td><span style="font-size:12px;">0.00000000</span></td>
+							  <td>
+								<div class="btn-group" role="group">
+									<button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
+									  Actions
+									</button>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item" href="#">
+
+										Archive
+									  </a>
+									  <a class="dropdown-item" href="#">
+
+										Remove
+									  </a>
+									  <a class="dropdown-item" href="#">
+
+										Get private key
+									  </a>
+									</div>
+								  </div>	
+							  </td>
+							</tr>
+							<tr>
+							  <th scope="row"><span style="font-size:8px;">1Lkd2jdje2bk8bjd2kkdk2bks2</span></th>
+								<td><span style="font-size:12px;">0.00000000</span></td>
+								<td><span style="font-size:12px;">0.00000000</span></td>
+							  <td>
+								<div class="btn-group" role="group">
+									<button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
+									  Actions
+									</button>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item" href="#">
+										Archive
+									  </a>
+									  <a class="dropdown-item" href="#">
+										Remove
+									  </a>
+									  <a class="dropdown-item" href="#">
+										Get private key
+									  </a>
+									</div>
+								  </div>	
+							  </td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" id="contractsTab">
+				<div style="text-align:right;margin-top:2px;">
+					<span class="statcard-desc">Contracts</span>
+				</div>
+				<div class="row" style="margin-top:15px;">
+					<div class="col-md-5">
+						<h4><i class="fa fa-object-ungroup" aria-hidden="true"></i> New Contract</h4>
+						<form>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleSelect1">Wallet to Contract</label>
+							<select class="form-control" id="contractWallet">
+							  <option>1Lkd2jdje2bk8bjd2kkdk2bks2</option>
+							  <option>1Lkd2jdje2bk8bjd2kkdk2bks2</option>
+							  <option>1Lkd2jdje2bk8bjd2kkdk2bks2</option>
+							</select>
+						  </div>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Name</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="My first contract">
+							<small id="emailHelp" class="form-text text-muted">This name is only for you, only you will see it</small>
+						  </div>
+							<div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Contract type</label>
+							<select class="form-control" id="contractWallet">
+							  <option>Static</option>
+							  <option>Excecutable</option>
+							</select>
+							<small id="emailHelp" class="form-text text-muted">Executable mean .php,.py etc files</small>
+						  </div>
+						  <div style="text-align:right;">
+						  	<button class="btn btn-secondary">Deploy</button>
+						  </div>
+						</form>
+					</div>
+					<div class="col-md-7">
+						<h4><i class="fa fa-window-restore" aria-hidden="true"></i> Select Container</h4>
+						<div class="form-group" style="margin-bottom:5px;">
+							<select class="form-control" id="contractWallet">
+							  <option>xfrw3fregwrge</option>
+							  <option>xfrw3fregwrge</option>
+							  <option>xfrw3fregwrge</option>
+							</select>
+						  </div>
+						<h4><i class="fa fa-area-chart" aria-hidden="true"></i> Used resources</h4>
+						<span class="badge badge-pill badge-default">Transfer: 0.03 GB</span>
+						<span class="badge badge-pill badge-default">Execution: 322 Ex</span>
+						<span class="badge badge-pill badge-default">Hold: 1 GB Hour</span>
+						
+						<h4 style="margin-top:5px;"><i class="fa fa-files-o	" aria-hidden="true"></i> Inside</h4>
+						<table class="table table-hover" style="margin-bottom:0px;">
+						  <thead style="font-size:13px;">
+							<tr>
+							  <th> </th>
+							  <th>Name</th>
+							  <th>Edited</th>
+							  <th></th>
+							</tr>
+						  </thead>
+						  <tbody style="font-size:11px;">
+							<tr>
+								<td><i class="fa fa-file-code-o" aria-hidden="true"></i></td>
+								<td>contract.conf</td>
+								<td>20/11/2017</td>
+								<td></td>
+							</tr>
+							  <tr>
+								<td><i class="fa fa-folder-open-o" aria-hidden="true"></i></td>
+								<td>container</td>
+								<td>20/11/2017</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-folder-open-o" aria-hidden="true"></i></td>
+								<td>settings</td>
+								<td>20/11/2017</td>
+								<td></td>
+							</tr>
+						  </tbody>
+						</table>
+						<div style="text-align:right;margin-top:-8px;">
+							<span class="badge badge-pill badge-default">Open folder</span>
+						</div>
+							
+						
+					</div>
+				</div>
+			</div>
+			<div class="collapse" id="codeTab">
+				<div style="text-align:right;margin-top:2px;">
+					<span class="statcard-desc">Code live</span>
+				</div>
+				<div class="row" style="margin-top:15px;">
+					<textarea style="width:100%;height:350px; text-align:left" readonly>cuddy-rpc: Write "help" to recive list of RPC examples</textarea>
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-code" aria-hidden="true"></i></span>
+					  <input type="text" class="form-control" placeholder="code" aria-describedby="basic-addon1">
+						<span class="input-group-btn">
+							<button class="btn btn-secondary" type="button">Execute</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" id="settingsTab">
+				<div style="text-align:right;margin-top:2px;">
+					<span class="statcard-desc"></span>
+				</div>
+				<div class="row" style="margin-top:15px;">
+					<div class="col-md-6">
+						<h4><i class="fa fa-object-ungroup" aria-hidden="true"></i> Contract fee</h4>
+						<form>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Contract proccessing</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Contract transfer</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+							<div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Contract hold</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+						  <div style="text-align:right;">
+						  	<button class="btn btn-secondary">Set</button>
+						  </div>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<h4><i class="fa fa-object-ungroup" aria-hidden="true"></i> Others</h4>
+						<form>
+							<div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Transfer fee</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Maximum connections</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="8">
+							<small id="emailHelp" class="form-text text-muted">On this will depen how good brodcating in the network is, higher amount, more resources of your computer will be used.</small>
+						  </div>
+						  <div style="text-align:right;">
+						  	<button class="btn btn-secondary">Set</button>
+						  </div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" id="settingsTab">
+				<div style="text-align:right;margin-top:2px;">
+					<span class="statcard-desc">Settings</span>
+				</div>
+				<div class="row" style="margin-top:15px;">
+					<div class="col-md-6">
+						<h4><i class="fa fa-object-ungroup" aria-hidden="true"></i> Contract fee</h4>
+						<form>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Contract proccessing</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Contract transfer</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+							<div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Contract hold</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+						  <div style="text-align:right;">
+						  	<button class="btn btn-secondary">Set</button>
+						  </div>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<h4><i class="fa fa-object-ungroup" aria-hidden="true"></i> Others</h4>
+						<form>
+							<div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Transfer fee</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="0.00001">
+							<small id="emailHelp" class="form-text text-muted">From this fee will depend time to proccess your payment</small>
+						  </div>
+						  <div class="form-group" style="margin-bottom:5px;">
+							<label for="exampleInputEmail1">Maximum connections</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="contractName" placeholder="8">
+							<small id="emailHelp" class="form-text text-muted">On this will depen how good brodcating in the network is, higher amount, more resources of your computer will be used.</small>
+						  </div>
+						  <div style="text-align:right;">
+						  	<button class="btn btn-secondary">Set</button>
+						  </div>
+						</form>
+					</div>
+				</div>
+			</div>
+				
+				<div class="row" id="footer" style="text-align:right;">
+					<div class="col-md-12">
+						<span class="badge badge-outline badge-default">Connection: 5</span>
+						<span class="badge badge-outline badge-default">Blocks: 30 (not synchronized)</span>
+					</div>
+				</div>
+		</div>
+	</div>
+
+</div>
+</body>
