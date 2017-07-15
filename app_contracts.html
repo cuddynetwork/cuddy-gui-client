@@ -1,0 +1,191 @@
+<html class=" js cssanimations" lang=""><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Spacial - Theme docs</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="dist/theme.min.css">
+
+  <!-- javascript -->
+  <script src="resources/jquery.min.js"></script>
+  <script src="resources/highlight.min.js"></script>
+  <script src="resources/tether.min.js"></script>
+  <script src="dist/theme.min.js"></script>
+</head>
+<body>
+<div class="panel-body" style="max-width:850px;max-height:450px;">
+	<div class="row">
+		<div class="col-md-2">
+			<nav class="iconav" style="position: relative;">
+			<a class="iconav-brand" href="#">
+			  <i class="ion-cube"></i>
+			</a>
+			<div class="nav-slider">
+			  <ul class="nav iconav-nav flex-md-column">
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Dashboard">
+					<i class="ion-home"></i>
+					<span class="nav-link-label hidden-md-up">Dashboard</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Statistics">
+					<i class="fa fa-list"></i>
+					<span class="nav-link-label hidden-md-up">Contracts</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Metrics">
+					<i class="ion-pie-graph"></i>
+					<span class="nav-link-label hidden-md-up">Metrics</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Developer console">
+					<i class="ion-code"></i>
+					<span class="nav-link-label hidden-md-up">Console</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Settings">
+					<i class="ion-gear-a"></i>
+					<span class="nav-link-label hidden-md-up">Settings</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#" title="" data-toggle="tooltip" data-placement="right" data-container="body" data-original-title="Sign out">
+					<i class="ion-power"></i>
+					<span class="nav-link-label hidden-md-up">Sign out</span>
+				  </a>
+				</li>
+			  </ul>
+			</div>
+			</nav>
+		</div>
+		<div class="col-md-10">
+			<div class="row" style="margin-top:15px;">
+				<div class="col-md-4">
+					<h4>Your account</h4>
+					<div class="statcard p-3">
+					  <h3 class="statcard-number">
+						12,938.00
+					  </h3>
+					  <span class="statcard-desc">Total balance CUD</span>
+					</div>
+					<div class="statcard p-3">
+					  <h3 class="statcard-number">
+						5,230.23
+						<small class="stat-indicator indicator-positive">3%</small>
+					  </h3>
+					  <span class="statcard-desc">Total balance USD</span>
+					</div>
+					<h4>Active contracts</h4>
+					<div class="statcard p-3">
+					  <h3 class="statcard-number">
+						0.2342
+						<small class="stat-indicator indicator-positive">3%</small>
+					  </h3>
+					  <span class="statcard-desc">CUD each houre</span>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<h4>Send</h4>
+					<div class="row" style="margin-bottom:10px;">
+						<div class="col-md-6" style="padding:0px;">
+							<input type="email" class="form-control" id="addressCUD" aria-describedby="Cuddy Address" placeholder="1Lkd2jdje2bk8bjd2kkdk2bks2">
+						</div>
+						<div class="col-md-2" style="padding:0px;">
+							<input type="amount" class="form-control" id="amountCUD" aria-describedby="Cuddy Amount" placeholder="0.01">
+						</div>
+						<div class="col-md-2" style="padding:0px;">
+							<input type="amount" class="form-control" id="feeCUD" aria-describedby="Cuddy Fee" placeholder="0.01">
+						</div>
+						<div class="col-md-2" style="padding:0px;">
+							<button class="btn btn-secondary">Send</button>
+						</div>
+					</div>
+				
+					<h4>Addresses</h4>
+					<table class="table table-hover">
+					  <thead>
+						<tr>
+						  <th>Address</th>
+						  <th>Confirmed</th>
+						  <th>Unconfirmed</th>
+						  <th></th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th scope="row"><span style="font-size:8px;">1Lkd2jdje2bk8bjd2kkdk2bks2</span></th>
+							<td><span style="font-size:12px;">0.00000000</span></td>
+							<td><span style="font-size:12px;">0.00000000</span></td>
+						  <td>
+						  	<div class="btn-group" role="group">
+								<button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
+								  Actions
+								</button>
+								<div class="dropdown-menu">
+								  <a class="dropdown-item" href="#">
+									
+									Archive
+								  </a>
+								  <a class="dropdown-item" href="#">
+									
+									Remove
+								  </a>
+								  <a class="dropdown-item" href="#">
+									
+									Get private key
+								  </a>
+								</div>
+							  </div>	
+						  </td>
+						</tr>
+						<tr>
+						  <th scope="row"><span style="font-size:8px;">1Lkd2jdje2bk8bjd2kkdk2bks2</span></th>
+							<td><span style="font-size:12px;">0.00000000</span></td>
+							<td><span style="font-size:12px;">0.00000000</span></td>
+						  <td>
+						  	<div class="btn-group" role="group">
+								<button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
+								  Actions
+								</button>
+								<div class="dropdown-menu">
+								  <a class="dropdown-item" href="#">
+									
+									Archive
+								  </a>
+								  <a class="dropdown-item" href="#">
+									
+									Remove
+								  </a>
+								  <a class="dropdown-item" href="#">
+									
+									Get private key
+								  </a>
+								</div>
+							  </div>	
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" id="footer" style="text-align:right;">
+				<div class="col-md-12">
+					<span class="badge badge-outline badge-default">Connection: 5</span>
+					<span class="badge badge-outline badge-default">Blocks: 30 (not synchronized)</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
